@@ -1,0 +1,43 @@
+.doctor-container {
+  padding: 40px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.doctor-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #005f73;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.doctor-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.doctor-card:hover {
+  transform: scale(1.05);
+}
+
+.doctor-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.specialty {
+  color: #115028;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

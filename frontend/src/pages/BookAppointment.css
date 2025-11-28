@@ -1,0 +1,117 @@
+/* ===== FORM CONTAINER ===== */
+.form-container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #f7f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== TITLE ===== */
+.form-container h2 {
+  color: #005f73;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ===== INPUTS AND SELECT ===== */
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+/* Focus glow */
+form input:focus,
+form select:focus {
+  border-color: #0a9396;
+  box-shadow: 0 0 6px rgba(10, 147, 150, 0.4);
+  outline: none;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  background: linear-gradient(90deg, #005f73, #0a9396);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover animation */
+.btn:hover {
+  background: linear-gradient(90deg, #0a9396, #005f73);
+  transform: scale(1.05);
+}
+
+/* ===== SUCCESS PAGE ===== */
+.success-page {
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.success-page h2 {
+  color: #0a9396;
+  margin-bottom: 10px;
+}
+
+.success-page p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+/* Button styling */
+.btn {
+  background-color: #28a745; /* Green color */
+  color: white;              /* Text color */
+  padding: 12px 25px;        /* Space inside button */
+  border: none;              /* Remove border */
+  border-radius: 8px;        /* Rounded corners */
+  font-size: 16px;           /* Text size */
+  font-weight: bold;         /* Bold text */
+  cursor: pointer;           /* Pointer on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #218838;  /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift */
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Disabled state */
+.btn:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
